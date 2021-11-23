@@ -50,3 +50,13 @@
 11) К сожалению, нечего прикреплять
 
 12) Проинспектировал код, исправил все предупреждения относительно PEP8 
+
+13) Через отладчик вывел на экран ширину и высоту изоражения, его тип. Также вывел значение ширины блока и количество градаций серого.
+
+![image](https://github.com/smileman0001/filter_py/blob/main/screenshots/img.png)
+
+![image](https://github.com/smileman0001/filter_py/blob/main/screenshots/step%26size.png)
+
+14) Cкриншоты результата работы отладчика: 
+
+![image](https://github.com/smileman0001/filter_py/blob/main/screenshots/debugger.png)
