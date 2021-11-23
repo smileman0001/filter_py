@@ -9,15 +9,15 @@ def transform_to_mosaic(x, y, arr, size, step):
     average_brightness = np.mean(arr[x:x+size, y:y+size][:])
     arr[x:x+size, y:y+size][:] = int(average_brightness // step) * step
 
-open_name = input('Введите назвние изображения : ')
-save_name = input('Введите назвние выходного изображения : ')
+open_name = "test.jpg"
+save_name = "result.jpg"
 
 
 img = Image.open(open_name)
 arr = np.array(img)
 
-size = int(input('Введите длину боковой стороны мозайки (например: 10 (x*x)) : '))
-gradation = int(input('Введите градацию серого (например: 5) : '))
+size = 10
+gradation = 50
 step = 255 // gradation
 
 width = len(arr)
