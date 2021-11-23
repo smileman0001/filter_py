@@ -6,6 +6,14 @@ np.seterr(over='ignore')
 
 
 def transform_to_mosaic(x, y, arr, size, step):
+    """
+    Данный метод заполняет массив(новую картинку) серым цветом с нужным оттенком
+    :param x: int
+    :param y: int
+    :param arr
+    :param size: int
+    :param step: int
+    """
     average_brightness = np.mean(arr[x:x+size, y:y+size][:])
     arr[x:x+size, y:y+size][:] = int(average_brightness // step) * step
 
